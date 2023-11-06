@@ -214,6 +214,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 Sekian dari saya 
-## Terima Kasih 
+## Terima Kasih  
 
 
