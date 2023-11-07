@@ -19,7 +19,8 @@ yang pertama adalah
 | No.| DAFTAR ISI       | Menuju                                 |
 |----|------------      |----------------------------------------|
 | 1. | String           | [Click Here   ](#string)               |
-| 2. | Layout           | [Click Here   ](#layout)               |
+| 2. | Color            | [Click Here   ](#color)                |
+| 3. | Layout           | [Click Here   ](#layout)               |
 | 4. | Java             | [Click Here   ](#mainactivity-java)    |
 | 5. | Video Hasil Run  | [Click Here   ](#video-hasil-run)      |
 
@@ -41,22 +42,48 @@ Code string
 ````
 Code string diatas digunakan untuk bilangan fibonacci yang ada dalam layout saya.
 
+## Color
+ 
+ Color adalah untuk menambahkan warna di dalam aplikasi nya 
+ Code Color
+ ````
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3F5185</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>
+````
+
 ## Layout
 
 Layout adalah tampilan tata letak yang ada di android studio , ssedangkan code dibawah adalah Layout dari bilangan Fibonacci 
 
 Code Layout
 ````
-<Button
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/ahay"
+    >
+
+
+    <Button
         android:id="@+id/button_toast"
-        android:layout_width="390dp"
+        android:layout_width="380dp"
         android:layout_height="49dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:background="@color/colorPrimary"
         android:onClick="setLimit"
         android:text="@string/button_label_toast"
         android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -102,7 +129,6 @@ Code Layout
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#80FF00"
         android:gravity="center_vertical"
         android:text="@string/count_initial_value"
         android:textAlignment="center"
@@ -111,9 +137,13 @@ Code Layout
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/button_count"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_toast"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="RtlCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 ````
 
 ## MainActivity Java
@@ -220,7 +250,9 @@ public class MainActivity extends AppCompatActivity {
 
 ## Video Hasil Run
 
-[Hasil Run Bilangan Fibonacci.webm](https://github.com/yogafrtm25/Fibonacci/assets/115678171/fd28a67f-3470-45a1-be2c-13f3a97108e4)
+[hasin run.webm](https://github.com/yogafrtm25/Fibonacci/assets/115678171/999855d2-949c-4f3c-8dea-be9b5ba538d7)
+
+
 
 
 Sekian dari saya 
