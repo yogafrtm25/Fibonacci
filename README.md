@@ -33,10 +33,10 @@ Code string
 ````
 <resources>
     <string name="app_name">Fibonaci</string>
-    <string name="button_label_finish">Toast</string>
+    <string name="button_label_finish">Back</string>
     <string name="button_label_count">Count</string>
     <string name="toast_massage">Bilangan Fibonance</string>
-    <string name="button_label_toast">angka limit Fibonacci?</string>
+    <string name="button_label_toast">Set Limit?</string>
     <string name="count_initial_value">1</string>
 </resources>
 ````
